@@ -1,8 +1,4 @@
-// ============================================================
-//  SUDOKU SOLVER — Full JS Implementation
-// ============================================================
 
-// --- DOM References ---
 const boardEl = document.getElementById('board');
 const statusBar = document.getElementById('statusBar');
 const statusMsg = document.getElementById('statusMessage');
