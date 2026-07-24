@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="title">S U D O K U</h1>
+            <p class="subtitle">Solver</p>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="status-bar" id="statusBar">
+            <span id="statusMessage">Enter numbers (1-9) or leave empty (0)</span>
+            <span class="status-dot" id="statusDot"></span>
+        </div>
+
+        <!-- Sudoku Grid -->
+        <div class="board-wrapper">
+            <div class="board" id="board"></div>
+        </div>
+
+        <!-- Timer / Info -->
+        <div class="info-bar" id="infoBar">
+            <span>⏱ <span id="solveTime">—</span></span>
+            <span>🧩 <span id="filledCount">0</span>/81 filled</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="actions">
+            <button class="btn btn-primary" id="solveBtn">
+                <span class="btn-icon">⚡</span> Solve
+            </button>
+            <button class="btn btn-secondary" id="clearBtn">
+                <span class="btn-icon">🗑</span> Clear
+            </button>
+            <button class="btn btn-accent" id="sampleBtn">
+                <span class="btn-icon">📋</span> Load Sample
+            </button>
+            <button class="btn btn-outline" id="validateBtn">
+                <span class="btn-icon">✅</span> Validate
+            </button>
+        </div>
+    </div>
+
+    <!-- Confetti Canvas for celebration -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
